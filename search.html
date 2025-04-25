@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Cars - CarMarket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CarMarket</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="seller-registration.html">Register as Seller</a></li>
+                    <li><a href="seller-login.html">Seller Login</a></li>
+                    <li><a href="search.html" class="active">Search Cars</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="container">
+            <h2>Search Cars</h2>
+            <p>Find your perfect match</p>
+            
+            <form id="searchForm" class="search-container">
+                <div class="search-row">
+                    <div class="search-group">
+                        <label for="searchModel">Model</label>
+                        <input type="text" id="searchModel" name="searchModel">
+                    </div>
+                    
+                    <div class="search-group">
+                        <label for="searchLocation">Location</label>
+                        <input type="text" id="searchLocation" name="searchLocation">
+                    </div>
+                    
+                    <div class="search-button">
+                        <button type="submit" class="btn">Search</button>
+                    </div>
+                </div>
+            </form>
+            
+            <div class="search-results" id="searchResults">
+                <h3>Search Results</h3>
+                
+                <div class="car-grid" id="resultsGrid">
+                    <!-- Search results will be displayed here -->
+                    <div class="car-card">
+                        <div class="car-image" style="background-image: url('https://images.pexels.com/photos/205337/pexels-photo-205337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');"></div>
+                        <div class="car-details">
+                            <h3> Toyota </h3>
+                            <p>35,000 miles • New York</p>
+                            <p class="price">$18,500</p>
+                        </div>
+                    </div>
+                    <div class="car-card">
+                        <div class="car-image" style="background-image: url('https://images.pexels.com/photos/28319193/pexels-photo-28319193/free-photo-of-bright-orange-honda-civic-at-austrian-car-meet.png?auto=compress&cs=tinysrgb&w=600');"></div>
+                        
+                        <div class="car-details">
+                            <h3> Honda </h3>
+                            <p>42,000 miles • Los Angeles</p>
+                            <p class="price">$17,200</p>
+                        </div>
+                    </div>
+                    <div class="car-card">
+                        <div class="car-image" style="background-image: url('https://images.pexels.com/photos/3065602/pexels-photo-3065602.jpeg?auto=compress&cs=tinysrgb&w=600');"></div>
+                        <div class="car-details">
+                            <h3> Ford Mustang</h3>
+                            <p>15,000 miles • Chicago</p>
+                            <p class="price">$32,900</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 CarMarket. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="about-us.html">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
